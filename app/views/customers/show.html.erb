@@ -1,0 +1,23 @@
+<h1>Mostrando Cliente</h1>
+<% if flash[:notice] %>
+  <p><%= flash[:notice] %></p>
+<% end %>
+<p>
+  <strong>Nome</strong>
+  <%= @customer.name %>
+</p>
+
+<p>
+  <strong>Email</strong>
+  <%= @customer.email %>
+</p>
+
+<p>
+  <strong>Telefone</strong>
+  <%= @customer.phone %>
+</p>
+
+<p>
+  <strong>Fumante? </strong>
+  <%= @customer.smoker %>
+</p>
