@@ -12,7 +12,7 @@ class CustomersController < ApplicationController
   end
 
   def edit; end
-
+  # test commit
   def update
     if @customer.update(customer_params)
       redirect_to customer_path(@customer.id), notice: 'Cliente atualizado com sucesso!'
